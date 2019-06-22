@@ -12,6 +12,10 @@ class FlutterAztecEditorPlugin: MethodCallHandler {
     fun registerWith(registrar: Registrar) {
       val channel = MethodChannel(registrar.messenger(), "flutter_aztec_editor")
       channel.setMethodCallHandler(FlutterAztecEditorPlugin())
+
+      registrar
+          .platformViewRegistry()
+          .registerViewFactory("com.clipsub.flutter_aztec_editor/AztecEditor", FlutterAztecViewFactory(registrar.messenger()))
     }
   }
 

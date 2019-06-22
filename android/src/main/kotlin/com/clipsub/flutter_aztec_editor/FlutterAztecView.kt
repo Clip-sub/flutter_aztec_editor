@@ -2,7 +2,6 @@ package com.clipsub.flutter_aztec_editor
 
 import android.content.Context
 import android.view.View
-import androidx.appcompat.widget.AppCompatEditText
 import io.flutter.plugin.common.BinaryMessenger
 import io.flutter.plugin.common.MethodCall
 import io.flutter.plugin.common.MethodChannel
