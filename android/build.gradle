@@ -1,4 +1,4 @@
-group 'com.example.flutter_aztec_editor'
+group 'com.clipsub.flutter_aztec_editor'
 version '1.0.0'
 
 buildscript {
@@ -18,6 +18,7 @@ rootProject.allprojects {
     repositories {
         google()
         jcenter()
+        maven { url "https://jitpack.io" }
     }
 }
 
@@ -43,5 +44,5 @@ dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
 
     // Should be latest stable Aztec Editor version.
-    api "com.github.wordpress-mobile.WordPress-Aztec-Android:aztec:v1.3.27"
+    api "com.github.wordpress-mobile.WordPress-Aztec-Android:aztec:develop-SNAPSHOT"
 }

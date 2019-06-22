@@ -1,4 +1,4 @@
-package com.example.flutter_aztec_editor_example
+package com.clipsub.flutter_aztec_editor_example
 
 import android.os.Bundle
 
