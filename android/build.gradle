@@ -33,7 +33,7 @@ android {
     }
     defaultConfig {
         minSdkVersion 16
-        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
     lintOptions {
         disable 'InvalidPackage'
@@ -44,5 +44,6 @@ dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
 
     // Should be latest stable Aztec Editor version.
-    api "com.github.wordpress-mobile.WordPress-Aztec-Android:aztec:develop-SNAPSHOT"
+    implementation "androidx.appcompat:appcompat:1.1.0-beta01"
+    api "com.github.wordpress-mobile.WordPress-Aztec-Android:aztec:v1.3.27"
 }
