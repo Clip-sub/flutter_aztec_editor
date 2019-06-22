@@ -1,4 +1,4 @@
-package com.example.flutter_aztec_editor
+package com.clipsub.flutter_aztec_editor
 
 import io.flutter.plugin.common.MethodCall
 import io.flutter.plugin.common.MethodChannel
