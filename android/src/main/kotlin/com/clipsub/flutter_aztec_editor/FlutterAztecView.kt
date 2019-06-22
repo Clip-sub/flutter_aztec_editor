@@ -1,6 +1,8 @@
 package com.clipsub.flutter_aztec_editor
 
 import android.content.Context
+import android.content.res.ColorStateList
+import android.graphics.Color
 import android.view.View
 import io.flutter.plugin.common.BinaryMessenger
 import io.flutter.plugin.common.MethodCall
@@ -13,6 +15,8 @@ open class FlutterAztecView internal constructor(context: Context, messenger: Bi
 
   init {
     aztecText = AztecText(context)
+    aztecText.setText("Yolo Bolo")
+    aztecText.setTextColor(Color.RED)
   }
 
   override fun getView(): View {
