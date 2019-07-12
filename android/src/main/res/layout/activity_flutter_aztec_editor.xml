@@ -1,9 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aztec="http://schemas.android.com/tools"
     xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".FlutterAztecEditorActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <org.wordpress.aztec.AztecText
+        android:id="@+id/visual"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:imeOptions="flagNoExtractUi"
+        android:scrollbars="vertical"
+        aztec:historyEnable="false" />
+
+    <org.wordpress.aztec.toolbar.AztecToolbar
+        android:id="@+id/formatting_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/format_bar_height" />
+</LinearLayout>

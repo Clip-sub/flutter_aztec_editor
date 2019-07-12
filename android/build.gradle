@@ -24,6 +24,7 @@ rootProject.allprojects {
 
 apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
 
 android {
     compileSdkVersion 28
@@ -44,6 +45,7 @@ dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
 
     // Should be latest stable Aztec Editor version.
-    implementation "androidx.appcompat:appcompat:1.1.0-beta01"
-    api "com.github.wordpress-mobile.WordPress-Aztec-Android:aztec:v1.3.27"
+    implementation "androidx.appcompat:appcompat:1.1.0-rc01"
+    api "com.github.wordpress-mobile.WordPress-Aztec-Android:aztec:develop-SNAPSHOT"
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
 }

@@ -1,5 +1,6 @@
 package com.clipsub.flutter_aztec_editor
 
+import android.content.Intent
 import io.flutter.plugin.common.MethodCall
 import io.flutter.plugin.common.MethodChannel
 import io.flutter.plugin.common.MethodChannel.MethodCallHandler
@@ -22,6 +23,8 @@ class FlutterAztecEditorPlugin: MethodCallHandler {
   override fun onMethodCall(call: MethodCall, result: Result) {
     if (call.method == "getPlatformVersion") {
       result.success("Android ${android.os.Build.VERSION.RELEASE}")
+    } else if (call.method === "openAztecEditorActivity") {
+
     } else {
       result.notImplemented()
     }

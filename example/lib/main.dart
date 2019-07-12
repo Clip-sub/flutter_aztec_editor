@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'dart:async';
 
-import 'package:flutter/services.dart';
 import 'package:flutter_aztec_editor/flutter_aztec_editor.dart';
 
 void main() => runApp(MyApp());
@@ -12,8 +11,6 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
-  String _platformVersion = 'Unknown';
-
   @override
   void initState() {
     super.initState();
@@ -27,12 +24,10 @@ class _MyAppState extends State<MyApp> {
           title: const Text('Plugin example app'),
         ),
         body: Container(
-          color: Color(0xff0000ff),
-          child: SizedBox(
-            width: 200,
-            height: 200,
-            child: FlutterAztecEditor(),
-          ),
+          color: Colors.black12,
+          width: 400,
+          height: 600,
+          child: FlutterAztecEditor(),
         ),
       ),
     );

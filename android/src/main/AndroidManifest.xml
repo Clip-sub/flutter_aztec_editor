@@ -1,3 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-  package="com.clipsub.flutter_aztec_editor">
+    package="com.clipsub.flutter_aztec_editor">
+
+    <application>
+        <activity android:name=".FlutterAztecEditorActivity"></activity>
+    </application>
+
 </manifest>
