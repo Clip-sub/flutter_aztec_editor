@@ -5,7 +5,7 @@
     <application>
         <activity
             android:theme="@style/Theme.AppCompat.Light.DarkActionBar"
-            android:name=".FlutterAztecEditorActivity" />
+            android:name=".vendor.FlutterAztecEditorActivity" />
     </application>
 
 </manifest>

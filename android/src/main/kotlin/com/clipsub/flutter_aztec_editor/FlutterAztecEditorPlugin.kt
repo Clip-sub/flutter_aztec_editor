@@ -3,6 +3,7 @@ package com.clipsub.flutter_aztec_editor
 import android.app.Activity
 import android.content.Intent
 import android.util.Log
+import com.clipsub.flutter_aztec_editor.vendor.FlutterAztecEditorActivity
 import io.flutter.plugin.common.MethodCall
 import io.flutter.plugin.common.MethodChannel
 import io.flutter.plugin.common.MethodChannel.MethodCallHandler

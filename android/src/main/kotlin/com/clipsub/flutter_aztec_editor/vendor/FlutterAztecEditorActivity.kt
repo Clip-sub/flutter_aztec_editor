@@ -1,8 +1,8 @@
-package com.clipsub.flutter_aztec_editor
+package com.clipsub.flutter_aztec_editor.vendor
 
-import android.app.Activity
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.clipsub.flutter_aztec_editor.R
 import org.wordpress.aztec.Aztec
 import org.wordpress.aztec.AztecText
 import org.wordpress.aztec.ITextFormat
