@@ -3,7 +3,9 @@
     package="com.clipsub.flutter_aztec_editor">
 
     <application>
-        <activity android:name=".FlutterAztecEditorActivity"></activity>
+        <activity
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar"
+            android:name=".FlutterAztecEditorActivity" />
     </application>
 
 </manifest>

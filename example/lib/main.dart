@@ -27,7 +27,13 @@ class _MyAppState extends State<MyApp> {
           color: Colors.black12,
           width: 400,
           height: 600,
-          child: FlutterAztecEditor(),
+          child: RaisedButton(
+            elevation: 1,
+            child: Text('Montana'),
+            onPressed: () {
+              FlutterAztecEditor.openAztecEditorActivity();
+            },
+          ),
         ),
       ),
     );
