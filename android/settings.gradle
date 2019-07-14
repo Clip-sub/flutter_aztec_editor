@@ -1,1 +1,4 @@
 rootProject.name = 'flutter_aztec_editor'
+
+includeBuild ':wordpress-comments'
+project(':wordpress-comments').projectDir = new File(rootProject.projectDir, '../wordpress-comments')

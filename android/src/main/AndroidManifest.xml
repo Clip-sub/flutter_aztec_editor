@@ -2,10 +2,17 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.clipsub.flutter_aztec_editor">
 
+    <!-- Required for downloading images -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!-- Required for adding media and requested at runtime -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
     <application>
         <activity
-            android:theme="@style/Theme.AppCompat.Light.DarkActionBar"
-            android:name=".vendor.FlutterAztecEditorActivity" />
+            android:name=".vendor.FlutterAztecEditorActivity"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar" />
     </application>
 
 </manifest>
