@@ -2,7 +2,7 @@
 
 <resources>
 
-    <style name="MainActivityTheme" parent="@style/Theme.AppCompat">
+    <style name="FlutterAztecEditorActivityTheme" parent="@style/Theme.AppCompat">
         <item name="android:colorAccent">@color/blue_medium</item>
         <item name="android:colorPrimary">@color/blue_medium</item>
         <item name="android:colorPrimaryDark">@color/blue_wordpress</item>

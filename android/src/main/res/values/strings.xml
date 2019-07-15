@@ -16,6 +16,7 @@
     <!-- MENU -->
     <string name="menu_undo">Undo</string>
     <string name="menu_redo">Redo</string>
+    <string name="menu_save">Save</string>
 
     <!-- PERMISSION -->
     <string name="permission_required_media_camera">Camera and storage permissions required to access camera</string>

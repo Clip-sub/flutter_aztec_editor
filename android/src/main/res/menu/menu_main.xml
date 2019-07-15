@@ -21,4 +21,12 @@
         tools:ignore="AlwaysShowAction" >
     </item>
 
+    <item
+        android:id="@+id/save"
+        android:icon="@drawable/ic_action_save_move"
+        android:title="@string/menu_save"
+        app:showAsAction="always"
+        tools:ignore="AlwaysShowAction" >
+    </item>
+
 </menu>

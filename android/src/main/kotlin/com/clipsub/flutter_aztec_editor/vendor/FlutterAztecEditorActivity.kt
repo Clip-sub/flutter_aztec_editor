@@ -57,6 +57,7 @@ import org.xml.sax.Attributes
 import java.io.File
 import java.util.*
 
+
 open class FlutterAztecEditorActivity : AppCompatActivity(),
     AztecText.OnImeBackListener,
     AztecText.OnImageTappedListener,
@@ -465,6 +466,14 @@ open class FlutterAztecEditorActivity : AppCompatActivity(),
         } else {
           aztec.sourceEditor?.redo()
         }
+      R.id.save -> {
+        aztec.toolbar.toggleEditorMode()
+        val data = aztec.sourceEditor!!.text.toString()
+        val resultIntent = Intent()
+        resultIntent.putExtra("HTML_DATA", data)
+        setResult(69, resultIntent)
+        this.finish()
+      }
       else -> {
       }
     }

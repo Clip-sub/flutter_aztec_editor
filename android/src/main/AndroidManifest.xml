@@ -12,7 +12,7 @@
     <application>
         <activity
             android:name=".vendor.FlutterAztecEditorActivity"
-            android:theme="@style/Theme.AppCompat.Light.DarkActionBar" />
+            android:theme="@style/FlutterAztecEditorActivityTheme" />
     </application>
 
 </manifest>
