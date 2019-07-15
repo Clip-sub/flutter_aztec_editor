@@ -5,7 +5,7 @@ class FlutterAztecEditor {
   static const MethodChannel _channel =
       const MethodChannel('flutter_aztec_editor');
 
-  static Future<String> openAztecEditorActivity() {
+  static Future openAztecEditorActivity() {
     return _channel.invokeMethod('openAztecEditorActivity');
   }
 }

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.clipsub.flutter_aztec_editor">
 
     <!-- Required for downloading images -->
@@ -13,6 +14,22 @@
         <activity
             android:name=".vendor.FlutterAztecEditorActivity"
             android:theme="@style/FlutterAztecEditorActivityTheme" />
+
+        <!-- Provider for exposing file URIs on Android 7+ -->
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true"
+            tools:replace="android:authorities">
+
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths"
+                tools:replace="android:resource">
+            </meta-data>
+
+        </provider>
     </application>
 
 </manifest>

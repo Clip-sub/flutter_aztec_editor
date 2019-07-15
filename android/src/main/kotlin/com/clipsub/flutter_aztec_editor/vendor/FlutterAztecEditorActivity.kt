@@ -308,7 +308,7 @@ open class FlutterAztecEditorActivity : AppCompatActivity(),
         .addPlugin(AudioShortcodePlugin())
         .addPlugin(HiddenGutenbergPlugin(visualEditor))
         .addPlugin(galleryButton)
-        .addPlugin(cameraButton)
+        // .addPlugin(cameraButton)
 
     // initialize the plugins, text & HTML
     if (!isRunningTest) {

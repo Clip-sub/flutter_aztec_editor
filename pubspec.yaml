@@ -1,8 +1,8 @@
 name: flutter_aztec_editor
-description: A new flutter plugin project.
-version: 0.0.1
-author:
-homepage:
+description: Aztec Editor, ported to Flutter.
+version: 1.0.0
+author: Quan Pham <doraemonfanclub@gmail.com>
+homepage: https://doko.aniviet.com/
 
 environment:
   sdk: ">=2.1.0 <3.0.0"
