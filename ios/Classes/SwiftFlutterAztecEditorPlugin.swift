@@ -15,7 +15,13 @@ public class SwiftFlutterAztecEditorPlugin: NSObject, FlutterPlugin {
   public func handle(_ call: FlutterMethodCall, result: @escaping FlutterResult) {
     result("iOS " + UIDevice.current.systemVersion)
     if (call.method == "openAztecEditorActivity") {
-        
+        let testVC = UIApplication.shared.keyWindow?.rootViewController
+        if (hostViewController != nil) {
+            print("Not nil")
+        } else {
+            print ("nil")
+        }
+        testVC?.present(FlutterAztecEditorViewController(), animated: true, completion: nil)
         /* UIView.animate(withDuration: 0.5) {
             // self.window?.rootViewController = nil
         } */
